@@ -1,0 +1,226 @@
+/****************************
+		GENERAL		
+****************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Arimo', sans-serif;
+}
+
+header {
+	font-size: .8em;
+}
+
+.review{
+	background-color: black;
+	color: white;
+	margin-top: 0;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+header div {
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+header p {
+	font-size: 1.5em;
+	color: grey;
+}
+
+.container,
+.signup{
+	width: 95%;
+	margin: 0 auto;
+}
+
+/****************************
+    	 <hr> BORDER		
+*****************************/
+
+header + hr {
+	width: 95%;
+	border: none;
+	border-top: 5px solid;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
+	margin-bottom: 15px;
+}
+
+.container hr{
+	margin-top: 25px;
+	border-top: 3px solid;
+}
+
+/***************************
+		   FORM		
+****************************/
+
+fieldset{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+legend{
+    width: 100%;
+    text-align: left;
+	font-weight: bold;
+	padding-top: 15px;
+	font-size: 1.3em;
+}
+
+fieldset:last-of-type label:first-of-type,
+fieldset:last-of-type label:nth-of-type(5){
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+.required:before { 
+  content:" *"; 
+  color:red;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+input -webkit- input-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+label, 
+input:not([type=checkbox]):not([type=radio]), 
+select, 
+textarea{
+	display: block;
+	font-size: 15px;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]),
+select,
+textarea{
+	width: 100%;
+	background-color: #b5b2b2;
+	border: none;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus,
+select:focus,
+textarea:focus{
+	background-color: lightgrey;
+}
+
+
+input:not([type=checkbox]):not([type=radio]),
+select{
+	height: 50px;
+	line-height: 50px;
+	outline: none;
+}
+
+textarea{
+	height: 100px;
+	outline: none;
+}
+
+label{
+   text-align: left;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+label input{
+   margin-right: 10px;
+}
+
+input#zip{
+   width: 30%;
+}
+
+input[type=submit]{
+	width: 100%;
+	background-color: #008e2c ;
+	color: white ;
+	font-weight:bold;
+	font-size: 1.2em ;
+	border: none;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: block;
+	text-align: center;
+	margin: 15px 0 0;
+	cursor: pointer;
+}
+
+option{
+	border:	none ;
+}
+
+/*****************************
+		Footer 	
+*****************************/
+
+footer {
+	color: grey;
+	font-size:.4em;
+	padding: 25px 0 45px;
+}
+
+/***************************
+	  MEDIAQUERY(768)	
+****************************/
+@media (min-width:768px){
+
+.signup,
+.container{
+	width: 70%;
+}
+
+fieldset:first-of-type input:not([type=radio]):not([type=checkbox]),
+select{
+	width: 75%;
+	float: right;
+	margin-top: 10px;
+}	
+
+header + hr {
+	width: 70%;
+}
+	
+#contact label,
+#contact input{
+	display: inline-block;
+}
+	
+#contact label,
+label[for=source]{
+	width: 25%;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+	
+#zip{
+	width: 40%;
+	float: left;
+	margin-top: 10px;
+}
+	
+}
+	
+	
+	
+	
